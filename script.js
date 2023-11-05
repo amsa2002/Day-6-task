@@ -1,17 +1,17 @@
 //Q1. 
 
-// class Movie{
-//     constructor(title, studio, ratings="PG"){
-//         this.title = title;
-//         this.studio = studio;
-//         this.ratings = ratings;
-//     }
-// }
+class Movie{
+    constructor(title, studio, ratings="PG"){
+        this.title = title;
+        this.studio = studio;
+        this.ratings = ratings;
+    }
+}
 
-// var obj = new Movie("Casino Royale","Eon Productions", "PG13")
-// console.log(obj.title);
-// console.log(obj.studio);
-// console.log(obj.ratings);
+var obj = new Movie("Casino Royale","Eon Productions", "PG13")
+console.log(obj.title);
+console.log(obj.studio);
+console.log(obj.ratings);
 
 //Q2.ClassDiagram_Circle
 
@@ -59,3 +59,41 @@ console.log(obj1.areaCircle);
 
 console.log(obj1.circumferanceCircle);
 
+//Q3.Write a “person” class to hold all the details.
+
+class Person{
+    constructor(name, dob, age, genter, address, salary )
+    {
+      this.name = name; 
+      this.dob = dob;
+      this.age = age;
+      this.genter = genter;
+      this.address = address;
+      this.salary = salary; 
+    }
+    
+}
+var objPerson = new Person("amsa", 2002, 21, "female", "chennai", 30000)
+console.log(objPerson.name);
+console.log(objPerson.dob);
+console.log(objPerson.age);
+console.log(objPerson.genter);
+console.log(objPerson.address);
+console.log(objPerson.salary);
+
+//Q4.write a class to calculate the uber price.
+
+
+class UberPrice{
+    constructor(kilometer,price=50){
+      this.kilometer = kilometer;
+      this.price = price;
+    }
+    get Price(){
+      return this.kilometer*this.price;
+    }
+  }
+  var uber1 = new UberPrice(5);
+  var uber2 = new UberPrice(5,125)
+  console.log(uber1.Price);
+  console.log(uber2.Price);
