@@ -1,4 +1,4 @@
-//Q1. 
+//Q1. class movie
 
 class Movie{
     constructor(title, studio, ratings="PG"){
